@@ -8,7 +8,8 @@
 #include <type_traits>
 
 // #TODO: create a math lib more efficient than this
-#define DEG2RAD (float)((M_PI * 2) / 360)
+//#define DEG2RAD (float)((M_PI * 2) / 360)
+#define DEG2RAD 0.01745329251994329576 // (pi/180)
 
 template <typename T>
 concept FloatType = std::is_floating_point_v<T>;
